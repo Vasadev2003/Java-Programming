@@ -64,7 +64,7 @@ public class Hello {
 
 // METHODS AND OBJECTS
 
-class Calculator{
+/* class Calculator{
 
    public int sub(int num1,int num2){
     int result = num1-num2;
@@ -82,7 +82,40 @@ public class Hello{
     System.out.println(result);
   }
 }
+ */
 
+
+class PlayingMusic{
+
+    public void playMusic(){
+      System.out.println("Music Is Playing");
+    }
+    
+    public String phone(int amount){
+       /* if(amount >= 50000){
+        return "Yeah..You Got The Phone";
+       }
+       else{
+        return "Sorry ...You did'nt have the correct amount to buy the phone";
+       } */
+
+       if(amount >= 50000)
+        return "Yeah You Got The Phone";
+
+        return "Sorry";
+    }
+
+}
+
+public class Hello{
+  public static void main(String a[]){
+      PlayingMusic music = new PlayingMusic();
+      music.playMusic();
+      String phone = music.phone(5000);
+      System.out.println(phone);
+      
+  }
+}
 
 
 
