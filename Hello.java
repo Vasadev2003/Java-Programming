@@ -62,4 +62,31 @@ public class Hello {
   }
 } */
 
+// METHODS AND OBJECTS
+
+class Calculator{
+
+  public int sub(int num1,int num2){
+    int result = num1-num2;
+    return result;
+  }
+}
+
+public class Hello{
+  public static void main(String a[]){
+    int num1 = 10;
+    int num2 = 220;
+
+    Calculator calc = new Calculator();
+    int result = calc.sub(num1,num2);
+    System.out.println(result);
+  }
+}
+
+
+
+
+
+
+
 
