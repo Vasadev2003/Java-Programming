@@ -10,3 +10,15 @@
 # Switch Case
 
 1.Completed the switch case with the respected example
+
+# Methods And Objects
+
+1.Completed the basic foundation for the methods and objects in java 
+*class Calculator{
+
+   public int sub(int num1,int num2){
+    int result = num1-num2;
+    return result;
+  }
+}
+that the public keyword in the method is optional 
