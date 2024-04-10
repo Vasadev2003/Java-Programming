@@ -7,3 +7,6 @@
 
 1.The thing that suprised me is the string that can be treated as an integer
 
+# Switch Case
+
+1.Completed the switch case with the respected example

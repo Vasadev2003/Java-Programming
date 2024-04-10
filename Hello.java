@@ -1,8 +1,8 @@
- class Hello 
+/*  class Hello 
  {
     public static void main(String a[]) 
     {
-        /* int num1 = 10;
+        int num1 = 10;
         int num2 = 20;
         int ans = num1+num2;
 
@@ -20,17 +20,46 @@
         int change = (int)num;
         float change2 = (float)num3;
         System.out.println(change);
-        System.out.println(change2); */
+        System.out.println(change2); 
 
         // pre increment and post increment 
 
         int num1 = 8;
-      /*   int post = num1++; */
+         int post = num1++; 
         int pre = num1++;
-       /*  System.out.println(post); */
+        System.out.println(post); 
         System.out.println(pre);
     }
 }
 
+
+
+ */
+
+
+//SWITCH CASE
+
+
+/* 
+public class Hello {
+  public static void main(String a[]){
+    //switch case
+
+    int num = 36;
+
+    switch(num){
+      case 1:
+        System.out.println("January");
+        break;
+      case 2 :
+        System.out.println("February");
+        break;
+      default :
+      System.out.println("nothing");
+    
+    }
+   
+  }
+} */
 
 
