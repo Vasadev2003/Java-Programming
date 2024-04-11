@@ -85,13 +85,13 @@ public class Hello{
  */
 
 
-class PlayingMusic{
+/* class PlayingMusic{
 
     public void playMusic(){
       System.out.println("Music Is Playing");
     }
     
-    public String phone(int amount){
+    public String phone(int amount){ */
        /* if(amount >= 50000){
         return "Yeah..You Got The Phone";
        }
@@ -99,15 +99,15 @@ class PlayingMusic{
         return "Sorry ...You did'nt have the correct amount to buy the phone";
        } */
 
-       if(amount >= 50000)
+    /*    if(amount >= 50000)
         return "Yeah You Got The Phone";
 
         return "Sorry";
     }
 
 }
-
-public class Hello{
+ */
+/* public class Hello{
   public static void main(String a[]){
       PlayingMusic music = new PlayingMusic();
       music.playMusic();
@@ -116,6 +116,60 @@ public class Hello{
       
   }
 }
+ */
+
+class Calculator{
+
+   public int add(int num1,int num2){
+        int cal = num1+num2;
+        return cal;
+   }                                      //this is called method overloading that we can have the same method name but with different arguments and parameters we can do it this is called method overloading
+
+   public int add(int num1,int num2,int num3){
+       int res = num1+num2+num3;
+       return res;
+   }
+
+}
+
+
+
+public class Hello{
+  public static void main(String a[]){
+    int num1 = 10;
+    int num2 = 20;
+    int num3 = 30;
+   
+  Calculator calc = new Calculator();
+  int result = calc.add(num1,num2,num3);
+  System.out.println(result);
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
