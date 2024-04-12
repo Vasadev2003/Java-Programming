@@ -46,3 +46,7 @@ that the public keyword in the method is optional
        return res;
    }
    }
+
+# Stack and heap memory
+
+*please learn stack and heap memory in java clearly in any other channel 

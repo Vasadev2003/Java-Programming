@@ -118,7 +118,7 @@ public class Hello{
 }
  */
 
-class Calculator{
+/* class Calculator{
 
    public int add(int num1,int num2){
         int cal = num1+num2;
@@ -146,6 +146,72 @@ public class Hello{
 
   }
 }
+ */
+
+// Array
+
+/* 
+public class Hello{
+  public static void main(String a[]){
+
+    int array[] = new int[6];
+    array[0] = 5;
+    array[1] = 6;
+    array[2] = 5;
+    array[3] = 6;
+    array[4] = 5;
+    array[5] = 6;
+    
+    for(int i=0;i<=5;i++){
+      System.out.println(array[i]);
+    }
+
+
+  }
+}
+ */
+
+
+public class Hello{
+  public static void main(String a[]){
+
+      int array[][]= new int[5][6];
+
+      int random = (int) (Math.random()*100);
+      
+      for(int i = 0; i<5 ; i++){
+          
+          for(int j = 0; j<6 ;j++){
+            array[i][j] = random;
+          }
+
+      }
+  
+      for(int i = 0;i<5;i++){
+        for(int j = 0; j<6 ; j++){
+          System.out.print(array[i][j] + " ");
+        }
+        System.out.println();
+      }
+     
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
