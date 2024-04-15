@@ -272,7 +272,7 @@ for(int n[]:array)
 
 
 //STATIC KEY WORD
-
+/* 
 class Employer{
  
    int age;
@@ -311,21 +311,88 @@ public class Hello{
   }
 }
 
+ */
 
 
+ /* class Student{
+
+     int rollNo;
+     static String name;
+
+     public Student(){
+       rollNo = 58;
+       System.out.println("Iam Constructor");
+     }
+
+     static{
+      name = "vasanth";
+      System.out.println("Iam Static");
+     }
+
+     public void print(){
+      System.out.println(name+":"+rollNo);
+    
+     }
+
+ }
 
 
+public class Hello {
+  public static void main(String a[]){
+
+    Student stud = new Student();
+    Student.name =  "vasanth";
+    stud.rollNo = 85;
+
+    Student stud2 = new Student();
+
+    stud.print();
+    
+   
+  }
+}
+ */
+
+//Encapsulation
+
+//Getter and Setters
 
 
+class Family{
+
+    private String wife;
+    private int salary;
+    private int countOfamily;
+
+    //getter
+
+    public void getFamily(){
+      System.out.println(wife + " "+salary+" "+countOfamily);
+
+    }
+
+    public void setFamily(String w,int s,int c){
+      wife = w;
+      salary = s;
+      countOfamily = c;
+
+    }
+    
+
+  
+  }
 
 
+public class Hello {
+  public static void main(String a[]){
 
 
+    Family fam = new Family();
+    fam.setFamily("abinaya", 8500000, 4);
+    fam.getFamily();
 
-
-
-
-
+  }
+}
 
 
 

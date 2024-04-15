@@ -103,3 +103,4 @@ public class Hello{
 
 
 
+# learn static methods from a another clear video
