@@ -560,7 +560,7 @@ public class Hello{
 
  //packages
 
-import numbers.*;
+/* import numbers.*;
 
  public class Hello{
   public static void main(String a[]){
@@ -569,4 +569,43 @@ import numbers.*;
     System.out.println(num.add(2,6));
         
   }
+ } */
+
+ // Polymorphism 
+
+  // it is defined that it behaves differently to the suitation
+  // there are two types run time polymorphism and compile time polymorphish
+
+
+ class A{
+  public void show(){
+    System.out.println("this is from A");
+  }
  }
+
+ class B extends A{
+  public void show(){
+    System.out.println("this is from B");
+  }
+
+ }
+
+ class C extends A{
+
+    public void show(){
+      System.out.println("this is from c");
+    }
+ }
+
+  public class Hello{
+    public static void main(String a[]){
+
+        A stud = new B();
+        stud.show();
+
+        stud = new C();
+        stud.show();
+
+
+    }
+  }

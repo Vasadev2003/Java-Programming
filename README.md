@@ -169,3 +169,7 @@ new Student() // like this also we can initialize a object
 
 # method overiding is nothing but it has same name and same arguments and the operation ius different
 # refer the commit method overide
+
+# refer a channel for public ,private,protected ,default kewword explnation
+
+# learned clearly the polymorphism and how it works at different suitation so will to see see at the commit of polymorphism
