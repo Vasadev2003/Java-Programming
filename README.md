@@ -173,3 +173,15 @@ new Student() // like this also we can initialize a object
 # refer a channel for public ,private,protected ,default kewword explnation
 
 # learned clearly the polymorphism and how it works at different suitation so will to see see at the commit of polymorphism
+
+# final key word
+
+final key word used in Class,Methods,asa well as variables
+
+when you think a particular thing is constant and no one should overide or inherit or change the value you can add the final keyword before the method,class,or varialbel
+
+
+
+# read further about object hascode and how it compares with the other object
+
+# UPCASTING AND DOWN CASTING REFERENCE THE COMMIT UPCAS AND DOWN CAST

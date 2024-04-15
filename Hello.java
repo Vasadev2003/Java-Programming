@@ -577,7 +577,7 @@ public class Hello{
   // there are two types run time polymorphism and compile time polymorphish
 
 
- class A{
+ /* class A{
   public void show(){
     System.out.println("this is from A");
   }
@@ -606,6 +606,36 @@ public class Hello{
         stud = new C();
         stud.show();
 
+
+    }
+  } */
+
+
+  class A{
+ 
+     public void show(){
+      System.out.println("this is from A");
+     }
+
+
+    
+  }
+
+  class B extends A{
+ 
+      public void show1(){
+        System.out.println("this is from b");
+      }
+  }
+
+  public class Hello{
+    public static void main(String a[]){
+      
+      A stud = new B();
+      stud.show();
+
+      B stud1 = (B)stud;
+      stud1.show1();
 
     }
   }
