@@ -770,9 +770,16 @@ public class Hello{
     void run();
     void sleep();  
 
+
+
  } 
 
- class B implements A{
+ interface Be{
+
+  void pushUp();
+ }
+
+ class B implements A,Be{
    
     public void run(){
       System.out.println("it is running");
@@ -781,6 +788,10 @@ public class Hello{
 
     public void sleep(){
       System.out.println("Sleep 8 hours a day");
+    }
+
+    public void pushUp(){
+      System.out.println("push up is going on");
     }
 
  }
@@ -793,6 +804,7 @@ public class Hello{
      B stud = new B();
      stud.run();
      stud.sleep();
+     stud.pushUp();
     
 
 

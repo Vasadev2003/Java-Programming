@@ -208,3 +208,11 @@ when you think a particular thing is constant and no one should overide or inher
 # Inner class
 
 *inner class refer the commit inner class
+
+
+# interface and implements
+
+* they are basicaly static and final
+* the variables are static and final
+
+* we can also impements two more methods with interface
