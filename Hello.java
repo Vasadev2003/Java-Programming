@@ -703,7 +703,7 @@ public class Hello{
 
 
  // Inner class Anonymous inner Class
- class A{
+ /* class A{
 
   public void run(){
     System.out.println("vasanth is running");
@@ -728,13 +728,36 @@ public class Hello{
   }
 }
 
+ */
 
 
+// Anonymus inner class with abstract class
+
+abstract class A{
+
+   public abstract void pushUp();
+   public abstract void pullUp();
+
+}
 
 
+public class Hello{
+  public static void main(String a[]){
 
-
-
+       A abclass = new A()
+       {
+        public void pushUp(){
+          System.out.println("Do hundered push ups");
+        }
+        public void pullUp(){
+          System.out.println("Do hundred Pull up");
+        }
+       };
+     
+       abclass.pushUp();
+       abclass.pullUp();
+  }
+}
 
 
 
