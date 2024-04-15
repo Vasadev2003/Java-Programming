@@ -485,7 +485,7 @@ public class Hello{
 
  // basic calculator
 //Multiple Inheritance
- class Calculator1{
+/*  class Calculator1{
     
       public int add(int n1,int n2){
         return n1+n2;
@@ -531,3 +531,29 @@ public class Hello{
 }
 
 
+ */
+// Method Overiding
+
+ class Calc{
+
+    public int add(int num1 ,int num2){
+       return num1+num2;
+    }
+ }
+
+ class Calc2 extends Calc{
+    public int add(int num1,int num2){
+      return num1+num2+1;
+    }
+ }
+
+ public class Hello{
+  public static void main(String a[]){
+ 
+      Calc2 cal = new Calc2();
+      int r = cal.add(2,5);
+      System.out.println(r);
+
+
+  }
+ }

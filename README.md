@@ -166,3 +166,6 @@ new Student() // like this also we can initialize a object
 
 # java does not support multiple inheritance
 # refer the commit multiple inheritance
+
+# method overiding is nothing but it has same name and same arguments and the operation ius different
+# refer the commit method overide
