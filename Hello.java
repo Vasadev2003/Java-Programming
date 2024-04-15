@@ -534,7 +534,7 @@ public class Hello{
  */
 // Method Overiding
 
- class Calc{
+ /* class Calc{
 
     public int add(int num1 ,int num2){
        return num1+num2;
@@ -555,5 +555,18 @@ public class Hello{
       System.out.println(r);
 
 
+  }
+ } */ 
+
+ //packages
+
+import numbers.*;
+
+ public class Hello{
+  public static void main(String a[]){
+  
+    first num = new first();
+    System.out.println(num.add(2,6));
+        
   }
  }
