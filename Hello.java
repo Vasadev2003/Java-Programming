@@ -643,7 +643,7 @@ public class Hello{
   // Abstract class
 
 
-abstract class Car{
+/* abstract class Car{
   
     abstract public void drive();
 
@@ -669,4 +669,37 @@ abstract class Car{
        car.song();
 
     }
+  } */
+
+
+  // inner class
+
+  class A{
+ 
+     public void print(){
+      System.out.println("iam a in the class A");
+     }
+
+    static class B{
+      public void print1(){
+        System.out.println("Iam inner class");
+      }
+    }
+
   }
+
+public class Hello{
+  public static void main(String a[]){
+
+      A parent = new A();
+      parent.print();
+
+      A.B inner = new A.B();
+      inner.print1();
+
+  }
+}
+
+
+
+

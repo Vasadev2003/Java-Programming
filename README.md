@@ -198,3 +198,13 @@ when you think a particular thing is constant and no one should overide or inher
 *we can only create the object with the all the abstract methods are initialized in a different class
 
 *refer the commit abstract
+
+
+
+
+
+
+
+# Inner class
+
+*inner class refer the commit inner class
