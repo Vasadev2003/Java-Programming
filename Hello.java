@@ -733,7 +733,7 @@ public class Hello{
 
 // Anonymus inner class with abstract class
 
-abstract class A{
+/* abstract class A{
 
    public abstract void pushUp();
    public abstract void pullUp();
@@ -758,12 +758,48 @@ public class Hello{
        abclass.pullUp();
   }
 }
+ */
+
+ // interface
+
+ /**
+  * Hello
+  */
+  interface A {
+ 
+    void run();
+    void sleep();  
+
+ } 
+
+ class B implements A{
+   
+    public void run(){
+      System.out.println("it is running");
+
+    }
+
+    public void sleep(){
+      System.out.println("Sleep 8 hours a day");
+    }
+
+ }
 
 
 
+public class Hello{
+  public static void main(String a[]){
+    
+     B stud = new B();
+     stud.run();
+     stud.sleep();
+    
 
 
 
+     
+  }
+}
 
 
 
