@@ -674,7 +674,7 @@ public class Hello{
 
   // inner class
 
-  class A{
+  /* class A{
  
      public void print(){
       System.out.println("iam a in the class A");
@@ -699,6 +699,57 @@ public class Hello{
 
   }
 }
+ */
+
+
+ // Inner class Anonymous inner Class
+ class A{
+
+  public void run(){
+    System.out.println("vasanth is running");
+  }  
+
+}
+public class Hello{
+  public static void main(String a[]){
+     
+       A vasa = new A()
+       {
+
+          public void run(){
+            System.out.println("Ram is running");
+          }
+
+       };
+
+       vasa.run();
+       
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
