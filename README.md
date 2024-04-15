@@ -185,3 +185,16 @@ when you think a particular thing is constant and no one should overide or inher
 # read further about object hascode and how it compares with the other object
 
 # UPCASTING AND DOWN CASTING REFERENCE THE COMMIT UPCAS AND DOWN CAST
+
+
+# Abstract class
+
+*this nothing but that the method is declared when it is unknown and initialized in a new lass while known and using the abstract 
+
+*using the abstract methosd inside a abstract class is not compulsory
+
+*we cannot create a onbect with the abstract class
+
+*we can only create the object with the all the abstract methods are initialized in a different class
+
+*refer the commit abstract

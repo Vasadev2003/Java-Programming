@@ -611,7 +611,7 @@ public class Hello{
   } */
 
 
-  class A{
+/*   class A{
  
      public void show(){
       System.out.println("this is from A");
@@ -636,6 +636,37 @@ public class Hello{
 
       B stud1 = (B)stud;
       stud1.show1();
+
+    }
+  } */
+
+  // Abstract class
+
+
+abstract class Car{
+  
+    abstract public void drive();
+
+    public void song(){
+      System.out.println("playing music..");
+    }
+
+ }
+
+ class BMW extends Car{
+
+    public void drive(){
+      System.out.println("Driving...");
+    }
+
+ }
+  public class Hello{
+    public static void main(String a[]){
+  
+
+       BMW car = new BMW();
+       car.drive();
+       car.song();
 
     }
   }
