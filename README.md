@@ -149,4 +149,20 @@ public class Hello{
 
   }
 }  
-*****this() === this keyword is called to execute the contructor that is in the same class
+*****this() === this keyword is called to execute the constructor that is in the same class
+
+
+# Object creator shortcut  
+
+instead of doing this like
+
+Student =  new Student();
+
+we can also rewrite the above statement like
+
+new Student() // like this also we can initialize a object
+
+# inheritance
+
+# java does not support multiple inheritance
+# refer the commit multiple inheritance

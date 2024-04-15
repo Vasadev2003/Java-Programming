@@ -438,7 +438,7 @@ public class Hello {
 
 // Inheritance
 
-class A{
+/* class A{
 
     public A(){
       System.out.println("in A");
@@ -480,9 +480,54 @@ public class Hello{
 
 
 
+ */
 
 
+ // basic calculator
+//Multiple Inheritance
+ class Calculator1{
+    
+      public int add(int n1,int n2){
+        return n1+n2;
+      }
+
+      public int sub(int n1,int n2){
+        return n1-n2;
+      }
+
+ }
 
 
+ class Calculator2 extends Calculator1{
+   public int mul(int n1,int n2){
+    return n1*n2;
+   }
+   public int div(int n1,int n2){
+    return n1/n2;
+   }
+ }
+
+ class AdvCal extends Calculator2{
+  public int mod(int n1,int n2){
+        return n1%n2;
+  }
+
+  public int pow(int n1,int n2){
+    return (int)Math.pow(n1,n2);
+  }
+ }
+
+public class Hello{
+  public static void main(String a[]){
+
+      AdvCal cal = new AdvCal();
+      System.out.println(cal.add(5,8));
+      System.out.println(cal.sub(8,9));
+      System.out.println(cal.mul(8,9));
+      System.out.println(cal.div(10,8));
+      System.out.println(cal.pow(8,9));
+
+  }
+}
 
 
