@@ -52,3 +52,54 @@ that the public keyword in the method is optional
 # please learn stack and heap memory in java clearly in any other channel 
 # learn jagged array properly with some other video
 
+
+# String buffer and String Buffer
+
+Strings are immutable only the reference will change while you change the value of the variable
+
+String buffer will allow you change the variable as well and also to perform more operations
+
+The single difference between the String buffer and the String Builder is that String buffer is thread safe anf the String Builder is not thread safe
+
+# Static key word is used to create a static varialble that is shared among all the objects and not instance variable and is class component not a object component so it is called staticaly with class like Employer.name not emp.name;
+class Employer{
+ 
+   int age;
+  static String name;
+   String pos;
+
+   public void print(){
+    System.out.println(name + " " + age + " " + pos);
+   }
+
+}
+
+public class Hello{
+  public static void main(String a[]){
+
+     Employer emp = new Employer();
+     Employer.name = "Vasanth";
+     emp.age = 25;
+     emp.pos = "Frontend Dev";
+
+     Employer emp2 = new Employer();
+     Employer.name = "Jasvanth";
+     emp2.age = 25;
+     emp2.pos = "Ui Dev";
+
+     Employer emp3 = new Employer();
+     Employer.name = "Vikram";
+     emp3.age = 25;
+     emp3.pos = "Backend Dev";
+  
+    Employer.name = "sharukhan";
+     emp.print();
+     emp2.print();
+     emp3.print();
+
+  }
+}
+
+
+
+

@@ -212,16 +212,16 @@ for(int n[]:array)
 
 
 
-
+/* 
  class Student{
-   
+
     int mark;
     String name;
 
 
  }
-
- public class Hello{
+ */
+ /*  public class Hello{ 
   public static void main(String a[]){
 
 
@@ -248,13 +248,68 @@ for(int n[]:array)
     }
 
   }
+ } */
+
+
+ // String Buffer And String Builder
+
+/* 
+ public class Hello{
+  public static void main(String a[]){
+
+     String name =  new String("vasanth"); 
+    System.out.println(name.length()); 
+
+
+    StringBuffer sb = new StringBuffer("vasanth");
+    System.out.println(sb.capacity());
+
+
+  }
  }
+ */
 
 
 
+//STATIC KEY WORD
 
+class Employer{
+ 
+   int age;
+  static String name;
+   String pos;
 
+   public void print(){
+    System.out.println(name + " " + age + " " + pos);
+   }
 
+}
+
+public class Hello{
+  public static void main(String a[]){
+
+     Employer emp = new Employer();
+     Employer.name = "Vasanth";
+     emp.age = 25;
+     emp.pos = "Frontend Dev";
+
+     Employer emp2 = new Employer();
+     Employer.name = "Jasvanth";
+     emp2.age = 25;
+     emp2.pos = "Ui Dev";
+
+     Employer emp3 = new Employer();
+     Employer.name = "Vikram";
+     emp3.age = 25;
+     emp3.pos = "Backend Dev";
+  
+    Employer.name = "sharukhan";
+     emp.print();
+     emp2.print();
+     emp3.print();
+
+  }
+}
 
 
 
