@@ -171,7 +171,7 @@ public class Hello{
 }
  */
 
-
+/* 
 public class Hello{
   public static void main(String a[]){
 
@@ -208,12 +208,47 @@ for(int n[]:array)
   }
   
 }
+ */
 
 
 
 
+ class Student{
+   
+    int mark;
+    String name;
 
 
+ }
+
+ public class Hello{
+  public static void main(String a[]){
+
+
+    Student s1 = new Student();
+    s1.name = "Vasanth";
+    s1.mark = 85;
+
+    Student s2 =new Student();
+    s2.name = "Vikram";
+    s2.mark = 85;
+
+    Student s3 = new Student();
+    s3.name = "ramji";
+    s3.mark = 85;
+
+    Student person[] = new Student[3];
+
+    person[0] = s1;
+    person[1] = s2;
+    person[2] = s3;
+
+    for(Student stud : person){
+      System.out.println(stud.name + ":" +stud.mark);
+    }
+
+  }
+ }
 
 
 
