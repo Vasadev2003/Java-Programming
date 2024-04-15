@@ -357,7 +357,7 @@ public class Hello {
 
 //Getter and Setters
 
-
+/* 
 class Family{
 
     private String wife;
@@ -371,10 +371,10 @@ class Family{
 
     }
 
-    public void setFamily(String w,int s,int c){
-      wife = w;
-      salary = s;
-      countOfamily = c;
+    public void setFamily(String wife,int salary,int countOfamily){
+      this.wife = wife;
+      this.salary = salary;
+      this.countOfamily = countOfamily;
 
     }
     
@@ -394,11 +394,86 @@ public class Hello {
   }
 }
 
+ */
+
+
+ //CONSTRUCTORS AND THIS
+
+/* 
+ class Student{
+
+   private int no;
+   private String name;
+   
+
+   public Student(){
+       no = 20;
+       name = "vasanth";
+   }
+
+   public void setStudent(int no,String name){
+       this.no = no;
+       this.name = name;
+   }
+  
+   public void getStudent(){
+    System.out.println(name+" "+no);
+   }
+
+
+ }
+
+ public class Hello{
+  public static void main(String a[]){
+       
+      Student stud = new Student();
+      stud.setStudent(20, "vikram");
+       stud.getStudent();
+      
+    
+
+  }
+ } */
+
+
+// Inheritance
+
+class A{
+
+    public A(){
+      System.out.println("in A");
+    }
+
+    public A(int n){
+      System.out.println("in int A");
+    }
+
+
+}
+
+class B extends A{
+    
+    public B(){
+      System.out.println("in B");
+    }
+
+    public B(int a){
+      
+      this();
+      
+      System.out.println("IN INT B");
+    }
+}
+
+public class Hello{
+  public static void main(String[]args){
+    
+   B stud = new B(8);
 
 
 
-
-
+  }
+}
 
 
 

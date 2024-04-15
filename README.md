@@ -104,3 +104,49 @@ public class Hello{
 
 
 # learn static methods from a another clear video
+
+
+
+
+
+# Inheritance that in a constructor the super kewy word plays a major role
+# defaulty all the classes in the java extends to a object 
+# default java the every constructor has the super() class which call the its super class
+
+class A{
+
+    public A(){
+      System.out.println("in A");
+    }
+
+    public A(int n){
+      System.out.println("in int A");
+    }
+
+
+}
+
+class B extends A{
+    
+    public B(){
+      System.out.println("in B");
+    }
+
+    public B(int a){
+      
+      this();
+      
+      System.out.println("IN INT B");
+    }
+}
+
+public class Hello{
+  public static void main(String[]args){
+    
+   B stud = new B(8);
+
+
+
+  }
+}  
+*****this() === this keyword is called to execute the contructor that is in the same class
