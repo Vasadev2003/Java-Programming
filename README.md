@@ -49,4 +49,6 @@ that the public keyword in the method is optional
 
 # Stack and heap memory
 
-*please learn stack and heap memory in java clearly in any other channel 
+# please learn stack and heap memory in java clearly in any other channel 
+# learn jagged array properly with some other video
+

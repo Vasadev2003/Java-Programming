@@ -193,9 +193,20 @@ public class Hello{
         }
         System.out.println();
       }
+      // enhanced for loop
+
+for(int n[]:array)
+{
+    for(int m: n){
+      System.out.print(m + " ");
+    }
+
+    System.out.println();
+}
      
 
   }
+  
 }
 
 
