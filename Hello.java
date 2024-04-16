@@ -948,7 +948,7 @@ public class Hello{
 
 // Funtional interface with lamba expression
 
-interface A{
+/* interface A{
       void show();
 }
 
@@ -963,4 +963,22 @@ public class Hello{
       A clas = new B();
       clas.show();
     }
+} */
+
+//Functional interface with inner class method
+@FunctionalInterface
+interface A{
+  void show();
+
+}
+
+public class Hello{
+  public static void main(String a[]){
+     A ne = new A(){
+      public void show(){
+        System.out.println("This is inner class");
+      }
+     };
+     ne.show();
+  }
 }
