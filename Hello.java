@@ -985,7 +985,7 @@ public class Hello{
 
 // Functional interface with lambda expression 
 
-@FunctionalInterface
+/* @FunctionalInterface
 interface A{
   int show(int num1,int num2);
 }
@@ -993,8 +993,8 @@ interface A{
 public class Hello{
   public static void main(String args[]){
     
-      /*  A show = () -> System.out.println("Hai from lambda");
-       show.show();*/
+      A show = () -> System.out.println("Hai from lambda");
+       show.show();
      
       A show = (num1,num2) ->{
         return num1+num2;
@@ -1005,4 +1005,25 @@ public class Hello{
  
       
   }
-}
+} */
+
+// try Catch method
+
+ public class Hello{
+  public static void main(String a[]){
+    
+       int num1 = 0;
+       int num2 = 20;
+       try{
+        int ope = num2/num1;
+        System.out.println(ope);
+       }
+       catch(Exception E){
+         System.out.println("Error happened");
+       }
+       
+
+    
+       System.out.println("This is next line");
+  }
+ }
