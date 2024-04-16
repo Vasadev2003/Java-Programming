@@ -813,15 +813,24 @@ public class Hello{
   }
 } */
 
+// Enum
 
+enum Status{
 
+  running,pending,sucess,fulfilled
 
+}
 
-
-
-
-
-
+public class Hello{
+  public static void main(String a[]){
+    
+      Status st[] = Status.values();   
+    
+      for(Status ss : st){
+          System.out.println(ss+" "+ss.ordinal());
+      }
+  }
+}
 
 
 
