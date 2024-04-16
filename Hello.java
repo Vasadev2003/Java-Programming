@@ -1009,7 +1009,7 @@ public class Hello{
 
 // try Catch method
 
- public class Hello{
+/*  public class Hello{
   public static void main(String a[]){
     
        int num1 = 0;
@@ -1025,5 +1025,44 @@ public class Hello{
 
     
        System.out.println("This is next line");
+  }
+ } */
+
+ //advance try catch method
+
+ public class Hello{
+  public static void main(String a[]){
+       
+       int i =20;
+       int j = 0;
+       String s = "vasanth";
+       int num[] = new int[5];
+
+       
+
+       try{
+         j = 18/i;
+         s.length();
+         System.out.println(num[5]);
+         
+        }
+
+        catch(ArithmeticException e){
+          System.out.println("cannot divide a numbe rwith zero");
+        }
+
+       
+
+        catch(ArrayIndexOutOfBoundsException e){
+          System.out.println("Array with limit"+e);
+        }
+
+        catch(Exception e){
+          System.out.println("Something went wrong "+ e);
+        }
+        System.out.println(j);
+        System.out.println("remaing else");
+
+
   }
  }
