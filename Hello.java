@@ -966,7 +966,7 @@ public class Hello{
 } */
 
 //Functional interface with inner class method
-@FunctionalInterface
+/* @FunctionalInterface
 interface A{
   void show();
 
@@ -980,5 +980,29 @@ public class Hello{
       }
      };
      ne.show();
+  }
+} */
+
+// Functional interface with lambda expression 
+
+@FunctionalInterface
+interface A{
+  int show(int num1,int num2);
+}
+
+public class Hello{
+  public static void main(String args[]){
+    
+      /*  A show = () -> System.out.println("Hai from lambda");
+       show.show();*/
+     
+      A show = (num1,num2) ->{
+        return num1+num2;
+      };
+
+      int ans = show.show(20, 30);
+      System.out.println(ans);
+ 
+      
   }
 }

@@ -236,4 +236,10 @@ interface => interface = "extends"
 
 # Annotations
 
+
 @Override is useful while overiding a method it show error if any problem or mistake in the overiding
+
+
+#lambda expresssion 
+
+*it is onnly allowed in functional interfa it means a interface which has only one method
