@@ -1030,7 +1030,7 @@ public class Hello{
 
  //advance try catch method
 
- public class Hello{
+ /*public class Hello{
   public static void main(String a[]){
        
        int i =20;
@@ -1063,6 +1063,26 @@ public class Hello{
         System.out.println(j);
         System.out.println("remaing else");
 
+
+  }
+ }*/
+
+
+ public class Hello{
+  public static void main(String a[]){
+
+        int i = 5;
+        int j = 0;
+
+        try{
+          j = 18/20;
+          if(j == 0){
+            throw new ArithmeticException("iam expection");
+          }
+        }
+        catch(ArithmeticException e){
+          System.out.println("This is arithmetic erro"+e);
+        }
 
   }
  }
