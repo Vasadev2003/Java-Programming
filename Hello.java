@@ -814,7 +814,7 @@ public class Hello{
 } */
 
 // Enum
-
+/* 
 enum Status{
 
   running,pending,sucess,fulfilled
@@ -832,5 +832,34 @@ public class Hello{
   }
 }
 
+ */
+
+// ENUM WITH IF ELSE AND SWTICH
 
 
+enum Status{
+  Running,Pending,Success,Fulfilled
+}
+
+public class Hello{
+  public static void main(String args[]){
+    
+       Status st = Status.Pending;
+
+      if(st == Status.Running){
+            System.out.println("It's Running");
+      }
+      else if(st == Status.Pending){
+        System.out.println("it is pending");
+      }
+      
+      else if(st == Status.Success){
+        System.out.println("it is sucess");
+      }
+
+      else if(st == Status.Fulfilled){
+        System.out.println("it is fullfilled");
+      }
+
+  }
+}
