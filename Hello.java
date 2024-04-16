@@ -864,7 +864,7 @@ public class Hello{
   }
 } */
 
-enum Status{
+/* enum Status{
   Success,Pending,Fulfilled,Running
 }
 
@@ -893,5 +893,30 @@ public class Hello{
         default:
         System.out.println("please wait....");
       }
+  }
+} */
+
+// Enum class
+
+enum Laptop{
+      
+   Macbook(50000),Hp(600000),PcDocPc(70000);
+
+   private int price;
+
+   private Laptop(int price){
+       this.price = price;
+   }
+
+  
+}
+
+public class Hello{
+
+  public static void main(String a[]){
+
+       for(Laptop lap : Laptop.values()){
+            System.out.println(lap);
+       }
   }
 }

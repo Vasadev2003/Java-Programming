@@ -220,6 +220,13 @@ when you think a particular thing is constant and no one should overide or inher
 
 # how to inherit from the class and interface 
 
+
 class => class = "extends"
 class => interface = "implements"
 interface => interface = "extends"
+
+
+
+# enum with if else and switch check the commit enum,enum with if else,and enum with switch
+
+*// read more about the behaviour of enum class in clearly
