@@ -923,7 +923,7 @@ public class Hello{
 
 //Annotations
 
-class A{
+/* class A{
     
     public void show(){
       System.out.println("This is from class A");
@@ -943,4 +943,24 @@ public class Hello{
     B be = new B();
     be.show();
   }
+} */
+
+
+// Funtional interface with lamba expression
+
+interface A{
+      void show();
+}
+
+class B implements A{
+  public void show(){
+    System.out.println("Priting A...normal method");
+  }
+}
+
+public class Hello{
+    public static void main(String a[]){
+      A clas = new B();
+      clas.show();
+    }
 }
