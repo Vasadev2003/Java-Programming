@@ -765,7 +765,7 @@ public class Hello{
  /**
   * Hello
   */
-  interface A {
+  /* interface A {
  
     void run();
     void sleep();  
@@ -811,7 +811,7 @@ public class Hello{
 
      
   }
-}
+} */
 
 
 

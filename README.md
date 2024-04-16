@@ -216,3 +216,10 @@ when you think a particular thing is constant and no one should overide or inher
 * the variables are static and final
 
 * we can also impements two more methods with interface
+
+
+# how to inherit from the class and interface 
+
+class => class = "extends"
+class => interface = "implements"
+interface => interface = "extends"
