@@ -229,4 +229,11 @@ interface => interface = "extends"
 
 # enum with if else and switch check the commit enum,enum with if else,and enum with switch
 
+
 *// read more about the behaviour of enum class in clearly
+
+
+
+# Annotations
+
+@Override is useful while overiding a method it show error if any problem or mistake in the overiding

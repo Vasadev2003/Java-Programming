@@ -898,7 +898,7 @@ public class Hello{
 
 // Enum class
 
-enum Laptop{
+/* enum Laptop{
       
    Macbook(50000),Hp(600000),PcDocPc(70000);
 
@@ -918,5 +918,29 @@ public class Hello{
        for(Laptop lap : Laptop.values()){
             System.out.println(lap);
        }
+  }
+} */
+
+//Annotations
+
+class A{
+    
+    public void show(){
+      System.out.println("This is from class A");
+    }
+
+}
+
+class B extends A{
+      @Override
+      public void show(){
+        System.out.println("this is from B OVERIDED");
+      }
+}
+
+public class Hello{
+  public static void main(String a[]){
+    B be = new B();
+    be.show();
   }
 }
