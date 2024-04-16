@@ -837,7 +837,7 @@ public class Hello{
 // ENUM WITH IF ELSE AND SWTICH
 
 
-enum Status{
+/* enum Status{
   Running,Pending,Success,Fulfilled
 }
 
@@ -861,5 +861,37 @@ public class Hello{
         System.out.println("it is fullfilled");
       }
 
+  }
+} */
+
+enum Status{
+  Success,Pending,Fulfilled,Running
+}
+
+public class Hello{
+  public static void main(String args[]){
+   
+      Status st = Status.Success;
+
+      switch(st){
+        case Running:
+          System.out.println("It is running");
+          break;
+
+        case Success:
+          System.out.println("It is Sucess");
+          break;
+
+        case Pending:
+          System.out.println("It is pending");
+          break;
+
+        case Fulfilled:
+          System.out.println("It is Fullfilled");
+          break;
+
+        default:
+        System.out.println("please wait....");
+      }
   }
 }
