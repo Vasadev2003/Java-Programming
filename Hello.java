@@ -1115,3 +1115,45 @@ public class Hello{
        
   }
  } */
+
+//Threads 
+// used divide a task into different threads and allow to run parallel 
+
+class A extends Thread {
+
+    public void run(){
+      for(int i = 0;i<=100;i++){
+        System.out.println("Hi from A");
+      }
+    }
+}
+
+class B extends Thread{
+  public void run(){
+    for(int i = 0; i <= 100; i++){
+        System.out.println("Hi from B");
+    }
+  }
+}
+
+public class Hello{
+  public static void main(String a[]){
+
+      A ae = new A();
+      B be = new B();
+      ae.start();
+      be.start();
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
