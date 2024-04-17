@@ -1119,7 +1119,7 @@ public class Hello{
 //Threads 
 // used divide a task into different threads and allow to run parallel 
 
-class A extends Thread {
+/* class A extends Thread {
 
     public void run(){
       for(int i = 0;i<=100;i++){
@@ -1146,7 +1146,59 @@ public class Hello{
 
 
   }
+} */
+
+
+// Thread with sleep and priorty
+
+class A extends Thread{
+   public void run(){
+     for(int i = 0; i <= 100 ; i++){
+      System.out.println("hello from A");
+      try{
+      Thread.sleep(10);
+      }
+      catch (Exception E){
+        System.out.println("Something went rong");
+      }
+      
+     }
+   }
 }
+
+class B extends Thread{
+   public void run(){
+     for(int i = 0; i <= 100 ; i++){
+      System.out.println("hi from B");
+       try{
+      Thread.sleep(10);
+      }
+      catch (Exception E){
+        System.out.println("Something went rong");
+      }
+      
+     }
+   }
+}
+
+public class Hello{
+  public static void main(String args[]){
+
+        A ae =new A();
+        B be = new B();
+        
+        ae.start();
+        be.start();
+  }
+}
+
+
+
+
+
+
+
+
 
 
 
