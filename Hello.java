@@ -1151,7 +1151,7 @@ public class Hello{
 
 // Thread with sleep and priorty
 
-class A extends Thread{
+/* class A extends Thread{
    public void run(){
      for(int i = 0; i <= 100 ; i++){
       System.out.println("hello from A");
@@ -1191,11 +1191,40 @@ public class Hello{
         be.start();
   }
 }
+ */
 
 
+ // Thread with Runnable class 
 
+ class A implements Runnable{
+    
+    public void run(){
+       for(int i = 0; i<=5; i++){
+        System.out.println("Hi from A");
+       }
+    }
 
+ }
 
+ class B implements Runnable{
+    public void run(){
+       for(int i = 0; i <= 5; i++){
+        System.out.println("Hi from B");
+       }
+    }
+ }
+
+public class Hello{
+  public static void main(String a[]){
+
+       Runnable ae = new A();
+       Runnable be = new B();
+       Thread th1 = new Thread(ae);
+       Thread th2 = new Thread(be);
+       th1.start();
+       th2.start();
+  }
+}
 
 
 

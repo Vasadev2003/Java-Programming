@@ -246,4 +246,10 @@ interface => interface = "extends"
 
 # try and finally with resources
 
-* it is that the finally block is used to close the opened resources like buffered reader you want to close the resource otherwise use it directly in the try block so that it automatically close the resource because it extends the class throwable and auto throwable
+
+* it is that the finally block is used to close the opened resources like buffered reader you want to close the resource otherwise use it directly in the try block so that it automatically close the resource because it extends the class throwable and 
+auto throwable
+
+# Thread with priorty and sleep
+
+* threads refer the commit thread and thread with priorty and sleep
