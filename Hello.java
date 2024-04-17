@@ -1092,7 +1092,7 @@ public class Hello{
  } */
 
 
- public class Hello{
+ /* public class Hello{
   public static void main(String a[]) throws IOException,NumberFormatException{
     BufferedReader br =null;
        
@@ -1114,4 +1114,4 @@ public class Hello{
 
        
   }
- }
+ } */

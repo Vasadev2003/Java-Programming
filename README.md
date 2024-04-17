@@ -240,6 +240,10 @@ interface => interface = "extends"
 @Override is useful while overiding a method it show error if any problem or mistake in the overiding
 
 
-#lambda expresssion 
+# lambda expresssion 
 
 *it is onnly allowed in functional interfa it means a interface which has only one method
+
+# try and finally with resources
+
+* it is that the finally block is used to close the opened resources like buffered reader you want to close the resource otherwise use it directly in the try block so that it automatically close the resource because it extends the class throwable and auto throwable
