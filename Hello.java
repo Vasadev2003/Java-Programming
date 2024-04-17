@@ -1196,7 +1196,7 @@ public class Hello{
 
  // Thread with Runnable class 
 
- class A implements Runnable{
+/*  class A implements Runnable{
     
     public void run(){
        for(int i = 0; i<=5; i++){
@@ -1225,8 +1225,38 @@ public class Hello{
        th2.start();
   }
 }
+ */
 
 
+
+
+
+ // Runnable with lambda expression
+
+
+ public class Hello{
+  public static void main(String a[]){
+
+      Runnable ae =() -> {
+        for(int i=0;i<=5;i++){
+          System.out.println("Hi from ae");
+        }
+      };
+      
+      Runnable be = () -> {
+        for(int i=0;i<=5;i++){
+          System.out.println("Hi from be");
+        }
+      };
+
+      Thread a1 = new Thread(ae);
+      Thread b1 = new Thread(be);
+
+      a1.start();
+      b1.start();
+
+  }
+ }
 
 
 
