@@ -762,7 +762,11 @@ public class Hello{
 
  // interface
 
- /**
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/**
   * Hello
   */
   /* interface A {
@@ -1068,7 +1072,7 @@ public class Hello{
  }*/
 
 
- public class Hello{
+ /* public class Hello{
   public static void main(String a[]){
 
         int i = 5;
@@ -1084,5 +1088,30 @@ public class Hello{
           System.out.println("This is arithmetic erro"+e);
         }
 
+  }
+ } */
+
+
+ public class Hello{
+  public static void main(String a[]) throws IOException,NumberFormatException{
+    BufferedReader br =null;
+       
+       try{
+        InputStreamReader in = new InputStreamReader(System.in);
+          br = new BufferedReader(in);
+         int num = Integer.parseInt(br.readLine());
+         System.out.println(num);
+       }
+       
+       
+
+       finally{
+
+        br.close();
+
+
+       }
+
+       
   }
  }
