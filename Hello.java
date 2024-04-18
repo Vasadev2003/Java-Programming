@@ -765,6 +765,8 @@ public class Hello{
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
   * Hello
@@ -1234,7 +1236,7 @@ public class Hello{
  // Runnable with lambda expression
 
 
- public class Hello{
+ /* public class Hello{
   public static void main(String a[]){
 
       Runnable ae =() -> {
@@ -1256,12 +1258,26 @@ public class Hello{
       b1.start();
 
   }
- }
+ } */
+
+public class Hello{
+  public static void main(String a[]){
+
+      Collection <Integer>arr = new ArrayList<Integer>();
+
+      arr.add(0);
+      arr.add(1);
+      arr.add(3);
+      arr.add(5);
+
+      for(int num : arr){
+        System.out.println(num);
+      }
 
 
-
-
-
+        
+  }
+}
 
 
 
