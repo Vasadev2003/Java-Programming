@@ -252,4 +252,9 @@ auto throwable
 
 # Thread with priorty and sleep
 
+
 * threads refer the commit thread and thread with priorty and sleep
+
+# Collections And List
+
+compare to list and collection the list has more inbuilt functions refer the commit that is collections and list

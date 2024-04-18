@@ -767,7 +767,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
   * Hello
@@ -1284,8 +1286,8 @@ public class Hello{
 
 
  */
-
- public class Hello{
+// List
+ /* public class Hello{
   public static void main(String a[]){
 
       List <Integer>arr = new ArrayList<Integer>();
@@ -1311,9 +1313,31 @@ public class Hello{
 
         
   }
+} */
+
+
+// when you want to avoid duplicate values
+// Set
+
+
+public class Hello{
+  public static void main(String args[]){
+
+      Set <Integer> arr = new HashSet<Integer>();
+
+      arr.add(5);
+      arr.add(5);
+      arr.add(5);
+      arr.add(5);
+      arr.add(5);
+
+      for(int num : arr){
+        System.out.println(num);
+      }
+      
+
+  }
 }
-
-
 
 
 
