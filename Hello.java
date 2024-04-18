@@ -767,6 +767,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 /**
   * Hello
@@ -1260,7 +1261,9 @@ public class Hello{
   }
  } */
 
-public class Hello{
+ // Collection
+
+/* public class Hello{
   public static void main(String a[]){
 
       Collection <Integer>arr = new ArrayList<Integer>();
@@ -1279,6 +1282,36 @@ public class Hello{
   }
 }
 
+
+ */
+
+ public class Hello{
+  public static void main(String a[]){
+
+      List <Integer>arr = new ArrayList<Integer>();
+
+      arr.add(0);
+      arr.add(1);
+      arr.add(3);
+      arr.add(5);
+
+      for(int num : arr){
+        System.out.println(num);
+        
+      }
+
+       System.out.println(arr.get(3));
+       arr.remove(2);
+
+       for(int num : arr){
+        System.out.println(num);
+        
+      }
+
+
+        
+  }
+}
 
 
 
