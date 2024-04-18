@@ -770,6 +770,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
   * Hello
@@ -1320,7 +1321,7 @@ public class Hello{
 // Set
 
 
-public class Hello{
+/* public class Hello{
   public static void main(String args[]){
 
       Set <Integer> arr = new HashSet<Integer>();
@@ -1329,6 +1330,27 @@ public class Hello{
       arr.add(5);
       arr.add(5);
       arr.add(5);
+      arr.add(5);
+
+      for(int num : arr){
+        System.out.println(num);
+      }
+      
+
+  }
+}
+ */
+
+ // Tree set when you wnat in sequence and order
+public class Hello{
+  public static void main(String args[]){
+
+      Set <Integer> arr = new TreeSet<Integer>();
+
+      arr.add(5);
+      arr.add(90);
+      arr.add(20);
+      arr.add(10);
       arr.add(5);
 
       for(int num : arr){
