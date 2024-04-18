@@ -258,3 +258,11 @@ auto throwable
 # Collections And List
 
 compare to list and collection the list has more inbuilt functions refer the commit that is collections and list
+
+# Set with hashset and treeset
+
+* hashSet
+ it is used to avoid the duplicate values in the list and it print in non sequence order not sorted
+
+ * treeset 
+  it is also like hashset it only change i print in sorted order
