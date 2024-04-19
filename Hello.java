@@ -1416,7 +1416,7 @@ public class Hello{
 
  //Comparator with string
 
-  public class Hello{
+/*   public class Hello{
     public static void main(String a[]){
         
         Comparator <String> comp = (String i,String j) -> {
@@ -1440,4 +1440,36 @@ public class Hello{
 
 
     }
-  } 
+  }  */
+
+  class Student{
+
+     int age;
+     String name;
+
+     public Student(int age,String name){
+       this.age = age;
+       this.name = name;
+     }
+  }
+
+
+  public class Hello{
+    public static void main(String a[]){
+
+      Comparator<Student>com = (Student i,Student j) -> (i.age > j.age)? 1:-1;
+        List <Student> std  = new ArrayList<>();
+        std.add(new Student(18, "vasanth"));
+        std.add(new Student(22, "vikram"));
+        std.add(new Student(58, "vasu"));
+        std.add(new Student(85, "vendan"));
+        std.add(new Student(90, "erropr"));
+      
+       Collections.sort(std,com);
+          
+        for(Student st : std){
+          System.out.println(st.age+" "+st.name);
+        }
+        
+    }
+  }
