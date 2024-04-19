@@ -763,9 +763,12 @@ public class Hello{
  // interface
 
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
-
-
+import java.util.List;
 import java.util.Map;
 
 
@@ -1363,7 +1366,7 @@ public class Hello{
  */
 
 //MAP
- public class Hello{
+/*  public class Hello{
   public static void main(String args[]){
 
         Map <String,Integer> ma = new HashMap<>();
@@ -1381,4 +1384,31 @@ public class Hello{
      }
 
   }
- }
+ } */
+
+ public class Hello{
+  public static void main(String args[]){
+
+
+       Comparator <Integer>comp = new Comparator<>() {
+            public int compare(Integer i,Integer j){
+                  if(i%10 > j%10){
+                    return 1;
+                  }
+                  else{
+                    return -1;
+                  }
+            }
+       };
+
+        List <Integer>array = new ArrayList<>();
+
+        array.add(55);
+        array.add(68);
+        array.add(72);
+        array.add(88);
+
+        Collections.sort(array,comp);
+        System.out.println(array);
+             
+  }}
