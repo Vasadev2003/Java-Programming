@@ -1386,7 +1386,7 @@ public class Hello{
   }
  } */
 
- public class Hello{
+/*  public class Hello{
   public static void main(String args[]){
 
 
@@ -1411,4 +1411,33 @@ public class Hello{
         Collections.sort(array,comp);
         System.out.println(array);
              
-  }}
+  }} 
+ */
+
+ //Comparator with string
+
+  public class Hello{
+    public static void main(String a[]){
+        
+        Comparator <String> comp = (String i,String j) -> {
+             if(i.length()>j.length()){
+              return 1;
+             }
+             else{
+              return -1;
+             }
+        };
+
+         List<String> name = new ArrayList<>();
+         name.add("sss");
+         name.add("Vikaram");
+         name.add("pugazhenthi");
+         name.add("devi");
+         name.add("s");
+
+         Collections.sort(name,comp);
+         System.out.println(name);
+
+
+    }
+  } 
