@@ -1,4 +1,4 @@
-/*  class Hello 
+/* class Hello 
  {
     public static void main(String a[]) 
     {
@@ -762,17 +762,12 @@ public class Hello{
 
  // interface
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
+import java.util.HashMap;
+
+
+import java.util.Map;
+
 
 /**
   * Hello
@@ -1343,7 +1338,7 @@ public class Hello{
 }
  */
 
- // Tree set when you wnat in sequence and order
+/*  // Tree set when you wnat in sequence and order
 public class Hello{
   public static void main(String args[]){
 
@@ -1365,5 +1360,25 @@ public class Hello{
   }
 }
 
+ */
 
+//MAP
+ public class Hello{
+  public static void main(String args[]){
 
+        Map <String,Integer> ma = new HashMap<>();
+
+        ma.put("Vasanth",85);
+        ma.put("Sevanthi",95);
+        ma.put("Devi",98);
+        ma.put("Pugazhenthi",85);
+
+        System.out.println(ma);
+
+        
+     for(String k : ma.keySet()){
+            System.out.println(k + " "+ ma.get(k));
+     }
+
+  }
+ }
